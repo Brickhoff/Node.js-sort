@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+    
+    
+    <table class="table table-striped">
+        <thead>
+            <tr align = "center">
+                <th scope="col">Project Title</th>
+                <th scope="col">Username</th>
+                <th scope="col">Date Added</th>
+                <th scope="col">Category Name</th>
+            </tr>
+        </head>
+        <tbody>
+            <% for(var i = 0; i < projects.length; i++){ %>
+                <tr>
+                  <td><%= projects[i].project_title %></a></td>
+                  <td><%= projects[i].username %></td>
+                  <td><%= projects[i].date_added %></td>
+                  <td><%= projects[i].description %></td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+
+
+
+
+<% include ./partials/footer %>
